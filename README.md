@@ -15,7 +15,7 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 
 Each zip contains a PowerShell install script and the content artifacts. On any machine with network access to your VCF Ops instance:
 
-1. Download the bundle zip from [Releases](../../releases).
+1. Download the bundle zip from the [`dist/`](./) folder in this repo (click the file, then **Download raw file**).
 2. Extract and run the install script:
 
 ```powershell
@@ -64,7 +64,7 @@ Tested on VCF Operations 9.0.2. Bundles use the standard content-zip import form
 
 ## Source
 
-These bundles are built by the [VCF Content Factory](https://github.com/sentania-labs/vcf-content-factory) framework — a YAML-driven content authoring pipeline for VCF Operations.
+These bundles are built by the [VCF Content Factory](https://github.com/sentania/vcf-content-factory) framework — a YAML-driven content authoring and distribution pipeline for VCF Operations.
 
 ## License
 
