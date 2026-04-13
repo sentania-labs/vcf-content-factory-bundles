@@ -13,22 +13,17 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 
 ## Installation
 
-Each zip contains a PowerShell install script and the content artifacts. On any machine with network access to your VCF Ops instance:
+Each zip contains both a Python and a PowerShell install script, content artifacts, and a README with detailed instructions. On any machine with network access to your VCF Ops instance:
 
-1. Download the bundle zip from [Releases](../../releases).
-2. Extract and run the install script:
+1. Download the bundle zip file from the root of this repo.
+2. Extract the zip and run the install script for your platform — **Python** (`python3 install.py`) or **PowerShell** (`.\install.ps1`).
+3. The script prompts for your VCF Ops hostname and credentials, then imports and enables all content.
 
-```powershell
-Expand-Archive ".\[VCF Content Factory] Capacity Assessment.zip" -DestinationPath .\bundle
-cd .\bundle
-.\install.ps1
-```
-
-3. The script prompts for your VCF Ops hostname and credentials, then imports and enables all content. Each step prints `[OK]` or `[WARN]` status.
+See the README inside each bundle for full usage details, uninstall instructions, and manual import options.
 
 **Requirements:**
 - VCF Operations 9.0 or later
-- PowerShell 5.1+ (Windows) or PowerShell 7+ (cross-platform)
+- Python 3.9+ **or** PowerShell 5.1+ (Windows) / PowerShell 7+ (cross-platform)
 - An account with admin privileges on the VCF Ops instance
 - Uninstall of dashboards, views, and reports requires the `admin` account specifically
 
@@ -50,13 +45,7 @@ Each bundle zip contains individual drop-in artifacts that can also be imported 
 
 ## Uninstall
 
-Run the same install script with the `-Uninstall` flag:
-
-```powershell
-.\install.ps1 -Uninstall
-```
-
-This removes all content objects the bundle created. Dashboard, view, and report uninstall requires the `admin` account due to VCF Ops ownership rules.
+Run the install script with the uninstall flag: `python3 install.py --uninstall` or `.\install.ps1 -Uninstall`. This removes all content objects the bundle created. Dashboard, view, and report uninstall requires the `admin` account due to VCF Ops ownership rules.
 
 ## Compatibility
 
@@ -64,7 +53,7 @@ Tested on VCF Operations 9.0.2. Bundles use the standard content-zip import form
 
 ## Source
 
-These bundles are built by the [VCF Content Factory](https://github.com/sentania-labs/vcf-content-factory) framework — a YAML-driven content authoring pipeline for VCF Operations.
+These bundles are built by the [VCF Content Factory](https://github.com/sentania/vcf-content-factory) framework — a YAML-driven content authoring and distribution pipeline for VCF Operations.
 
 ## License
 
