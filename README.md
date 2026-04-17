@@ -9,7 +9,6 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 | **Capacity Assessment** | Post-HA capacity headroom at cluster granularity, days-until-runout projections, and VM right-sizing opportunities (oversized / undersized / idle) with 95th-percentile demand justification. |
 | **Environment Config Status** | VP-level environment overview — ESXi patch and version consistency, hardware vendor and BIOS firmware inventory, and capacity KPIs in a single shareable dashboard. |
 | **VKS Core Consumption** | Tanzu Kubernetes (VKS) vCPU consumption broken down by workload type — supervisor control plane, worker nodes, VM service, pod VMs, vCLS — with per-vCenter rollups. |
-| **VM Performance** | Per-VM performance list with CPU, memory, and readiness metrics scoped by vCenter via a resource picker. |
 
 ## Installation
 
@@ -31,17 +30,24 @@ See the README inside each bundle for full usage details, uninstall instructions
 
 Every content object created by these bundles is prefixed with **`[VCF Content Factory]`** so you can distinguish bundle-managed content from built-in or manually created content. Dashboards are placed in the `VCF Content Factory` folder.
 
-Each bundle zip contains individual drop-in artifacts that can also be imported manually via the VCF Ops UI (drag and drop into Administration > Content > Import):
+Each bundle zip contains drop-in artifacts for manual import and automated install scripts:
 
-| File | Content |
+**Drop-in artifacts** (can be imported manually via the VCF Ops UI — navigate to the matching UI location and drag the file in):
+
+| File | VCF Ops UI location |
 |---|---|
-| `supermetric.json` | Super metric definitions |
-| `Dashboard.zip` | Dashboard layout |
-| `Views.zip` | List view definitions |
-| `Reports.zip` | Report definitions (if included) |
-| `AlertContent.xml` | Symptoms and alert definitions (if included) |
-| `install.ps1` | Automated install script |
-| `install.py` | Python install script (alternative) |
+| `supermetric.json` | Administration > Super Metrics > Import |
+| `Views.zip` | Manage > Views > Import |
+| `Dashboard.zip` | Manage > Dashboards > Import |
+| `AlertContent.xml` | Alerts > Alert Definitions > Import |
+| `Reports.zip` | Administration > Content > Reports > Import (if included) |
+
+**Install scripts:**
+
+| File | Purpose |
+|---|---|
+| `install.py` | Automated install (Python 3.9+) |
+| `install.ps1` | Automated install (PowerShell 5.1+ / 7+) |
 
 ## Uninstall
 
@@ -53,7 +59,7 @@ Tested on VCF Operations 9.0.2. Bundles use the standard content-zip import form
 
 ## Source
 
-These bundles are built by the [VCF Content Factory](https://github.com/sentania/vcf-content-factory) framework — a YAML-driven content authoring and distribution pipeline for VCF Operations.
+These bundles are built by the [VCF Content Factory](https://github.com/sentania-labs/vcf-content-factory) framework — a YAML-driven content authoring and distribution pipeline for VCF Operations.
 
 ## License
 
