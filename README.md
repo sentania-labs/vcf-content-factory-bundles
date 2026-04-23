@@ -9,6 +9,7 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 | **Capacity Assessment** | Post-HA capacity headroom at cluster granularity, days-until-runout projections, and VM right-sizing opportunities (oversized / undersized / idle) with 95th-percentile demand justification. |
 | **Environment Config Status** | VP-level environment overview — ESXi patch and version consistency, hardware vendor and BIOS firmware inventory, and capacity KPIs in a single shareable dashboard. |
 | **VKS Core Consumption** | Tanzu Kubernetes (VKS) vCPU consumption broken down by workload type — supervisor control plane, worker nodes, VM service, pod VMs, vCLS — with per-vCenter rollups. |
+| **VM Performance** | Cluster-level VM performance indicators — average VM CPU usage, worst-case CPU ready, worst-case memory contention, powered-on VM count, and allocated vCPU rollup — plus a snapshot health metric flagging VMs whose snapshots exceed provisioned disk size. Includes a per-vCenter list view and performance dashboard. |
 
 ## Installation
 
