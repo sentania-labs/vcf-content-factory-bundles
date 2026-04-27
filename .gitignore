@@ -1,2 +1,7 @@
 # Local PKA comm zone (not shared)
 .pka/
+
+# Publish lockfile — transient runtime guard for /publish, never tracked.
+# Earlier publish runs accidentally committed it; if it shows up in git
+# status as deleted, that's the cleanup catching up.
+.publish.lock

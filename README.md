@@ -1,6 +1,6 @@
 # VCF Content Factory Bundles
 
-Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (formerly Aria Operations / vRealize Operations). Each bundle is a self-contained zip that installs dashboards, views, super metrics, custom groups, and alerts onto a VCF Ops 9.x instance — no scripting or manual configuration required.
+Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (formerly Aria Operations / vRealize Operations). Each bundle is a self-contained zip that installs dashboards, views, super metrics, custom groups, and alerts onto a **VCF Operations 9.x** or **Aria Operations 8.18** instance — no scripting or manual configuration required.
 
 <!-- AUTO:START release-catalog -->
 
@@ -42,10 +42,19 @@ Each zip contains both a Python and a PowerShell install script, content artifac
 See the README inside each bundle for full usage details, uninstall instructions, and manual import options.
 
 **Requirements:**
-- VCF Operations 9.0 or later
+- VCF Operations 9.x **or** Aria Operations 8.18
 - Python 3.9+ **or** PowerShell 5.1+ (Windows) / PowerShell 7+ (cross-platform)
 - An account with admin privileges on the VCF Ops instance
 - Uninstall of dashboards, views, and reports requires the `admin` account specifically
+
+> **Policy enablement caveat.** The install script enables imported super
+> metrics on the **Default Policy** only. If your deployment uses
+> non-default, non-inheriting policies, you may need to manually enable the
+> imported super metrics in those policies — otherwise dashboard cells and
+> view columns that depend on those metrics will appear blank for resources
+> scoped under those policies. Check `Administration > Policies` after
+> install to confirm enablement on every policy that needs to see the
+> bundle's data.
 
 ## What Gets Installed
 
@@ -76,7 +85,7 @@ Run the install script with the uninstall flag: `python3 install.py --uninstall`
 
 ## Compatibility
 
-Tested on VCF Operations 9.0.2. Bundles use the standard content-zip import format and should work on any VCF Ops 9.x release. Super metric formulas use only documented DSL functions and built-in metric keys.
+Targets **VCF Operations 9.x** and **Aria Operations 8.18+**. Bundles use the standard content-zip import format and rely only on documented DSL functions and built-in metric keys — both stable across the two releases. Authored and primarily verified on VCF Operations 9.0.2; Aria Operations 8.18 verification is being added per dashboard, starting with VKS Core Consumption. Per-dashboard verification status will appear in each release's notes.
 
 ## Source
 
