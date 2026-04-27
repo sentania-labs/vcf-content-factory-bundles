@@ -8,9 +8,9 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 _No releases yet._
 
 ## Dashboards
-| Name | Version | Released | Description | Install |
+| Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| demand-driven-capacity-v2 | 1.0 | 2026-04-27 | Demand-driven capacity planning v2. | [`python3 install.py`](demand-driven-capacity-v2-1.0.zip) |
+| demand-driven-capacity-v2 | 2026-04-27 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
 
 ## Views
 _No releases yet._
