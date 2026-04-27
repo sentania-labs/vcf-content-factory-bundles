@@ -83,6 +83,19 @@ Each bundle zip contains drop-in artifacts for manual import and automated insta
 
 Run the install script with the uninstall flag: `python3 install.py --uninstall` or `.\install.ps1 -Uninstall`. This removes all content objects the bundle created. Dashboard, view, and report uninstall requires the `admin` account due to VCF Ops ownership rules.
 
+## About Third-Party Content
+
+The catalog above includes both **factory-native** content (authored in the [VCF Content Factory](https://github.com/sentania-labs/vcf-content-factory) repo) and **third-party** content (extracted from community-built dashboards and repackaged here for distribution). Third-party items live under the `ThirdPartyContent/` subtree and carry explicit **License** and **Authors** columns in the catalog.
+
+**What the factory adds to third-party content** — the original dashboards, views, and super metrics are unchanged from their authors' designs. The factory's contribution is the install/uninstall machinery wrapped around them:
+
+- A **scripted installer** that imports the dashboard, syncs its dependent views and super metrics, enables the SMs in the Default Policy, and turns on any required built-in (OOTB) metrics that aren't enabled by default.
+- A **symmetric uninstaller** that reverses every step cleanly.
+- **Dependency walking** so the bundle ships as a single self-contained zip — consumers don't need to chase or hand-import individual artifacts.
+- The same Policy-enablement caveat applies as for factory-native content (see Requirements above).
+
+Original authors retain all rights to dashboard design, queries, and view layout. License terms are per item.
+
 ## Compatibility
 
 Targets **VCF Operations 9.x** and **Aria Operations 8.18+**. Bundles use the standard content-zip import format and rely only on documented DSL functions and built-in metric keys — both stable across the two releases. Authored and primarily verified on VCF Operations 9.0.2; Aria Operations 8.18 verification is being added per dashboard, starting with VKS Core Consumption. Per-dashboard verification status will appear in each release's notes.
