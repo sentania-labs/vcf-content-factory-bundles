@@ -27,6 +27,14 @@ _No releases yet._
 ## Management Packs
 _No releases yet._
 
+## Third-Party Content
+_Content authored by the community and packaged here for convenience. License and authorship information is shown per item._
+
+### Dashboards
+| Name | Version | Released | Description | License | Authors | Download | Install |
+|---|---|---|---|---|---|---|---|
+| idps-planner | 1.0 | 2026-04-27 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner.zip) | `python3 install.py` |
+
 ## Retired
 _No retired artifacts._
 <!-- AUTO:END -->
