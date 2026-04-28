@@ -40,12 +40,11 @@ _Content authored by the community and packaged here for convenience. License an
 | Name | Version | Released | Description | License | Authors | Download | Install |
 |---|---|---|---|---|---|---|---|
 | idps-planner-3.5 | 3.5 | 2026-04-28 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
-| idps-planner | 1.0 | — | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner.zip) | `python3 install.py` |
 
 ## Retired
 | Name | Subdir | Retired | Reason | Download |
 |---|---|---|---|---|
-| idps-planner.zip | ThirdPartyContent/dashboards | 2026-04-28 | deprecated by 'idps-planner-3.5' | [Download](retired/ThirdPartyContent/dashboards/idps-planner.zip) |
+| idps-planner.zip | ThirdPartyContent/dashboards | 2026-04-28 | stale: no source release manifest | [Download](retired/ThirdPartyContent/dashboards/idps-planner.zip) |
 <!-- AUTO:END -->
 
 ## Installation
