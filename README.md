@@ -13,7 +13,7 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
 | capacity-assessment-dashboard | 2026-04-28 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
-| demand-driven-capacity-v2 | 2026-04-27 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
+| demand-driven-capacity-v2 | 2026-04-28 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
 | vks-core-consumption-dashboard | 2026-04-28 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
 
 ## Views
@@ -39,10 +39,13 @@ _Content authored by the community and packaged here for convenience. License an
 ### Dashboards
 | Name | Version | Released | Description | License | Authors | Download | Install |
 |---|---|---|---|---|---|---|---|
-| idps-planner | 1.0 | 2026-04-28 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner.zip) | `python3 install.py` |
+| idps-planner-3.5 | 3.5 | 2026-04-28 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
+| idps-planner | 1.0 | — | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner.zip) | `python3 install.py` |
 
 ## Retired
-_No retired artifacts._
+| Name | Subdir | Retired | Reason | Download |
+|---|---|---|---|---|
+| idps-planner.zip | ThirdPartyContent/dashboards | 2026-04-28 | deprecated by 'idps-planner-3.5' | [Download](retired/ThirdPartyContent/dashboards/idps-planner.zip) |
 <!-- AUTO:END -->
 
 ## Installation
