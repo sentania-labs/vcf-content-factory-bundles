@@ -7,14 +7,14 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 ## Bundles
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| vks-core-consumption-bundle | 2026-04-28 | VKS Core Consumption suite for VCF Operations — ships the interactive dashboard and a matching scheduled-report companion together. | [Download](bundles/vks-core-consumption-bundle.zip) | `python3 install.py` |
+| vks-core-consumption-bundle | 2026-04-29 | VKS Core Consumption suite for VCF Operations — ships the interactive dashboard and a matching scheduled-report companion together. | [Download](bundles/vks-core-consumption-bundle.zip) | `python3 install.py` |
 
 ## Dashboards
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| capacity-assessment-dashboard | 2026-04-28 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
-| demand-driven-capacity-v2 | 2026-04-28 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
-| vks-core-consumption-dashboard | 2026-04-28 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
+| capacity-assessment-dashboard | 2026-04-29 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
+| demand-driven-capacity-v2 | 2026-04-29 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
+| vks-core-consumption-dashboard | 2026-04-29 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
 
 ## Views
 _No releases yet._
@@ -28,7 +28,7 @@ _No releases yet._
 ## Reports
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| vks-core-consumption-report | 2026-04-28 | Printable/exportable summary of VKS vCPU consumption across a VCF environment. | [Download](reports/vks-core-consumption-report.zip) | `python3 install.py` |
+| vks-core-consumption-report | 2026-04-29 | Printable/exportable summary of VKS vCPU consumption across a VCF environment. | [Download](reports/vks-core-consumption-report.zip) | `python3 install.py` |
 
 ## Management Packs
 _No releases yet._
@@ -39,13 +39,45 @@ _Content authored by the community and packaged here for convenience. License an
 ### Dashboards
 | Name | Version | Released | Description | License | Authors | Download | Install |
 |---|---|---|---|---|---|---|---|
-| idps-planner-3.5 | 3.5 | 2026-04-28 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
+| idps-planner-3.5 | 3.5 | 2026-04-29 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
 
 ## Retired
 | Name | Subdir | Retired | Reason | Download |
 |---|---|---|---|---|
 | idps-planner.zip | ThirdPartyContent/dashboards | 2026-04-28 | stale: no source release manifest | [Download](retired/ThirdPartyContent/dashboards/idps-planner.zip) |
 <!-- AUTO:END -->
+
+## Authentication
+
+The install scripts authenticate to VCF Operations using local accounts and
+auth-source-attached identity providers that support server-side password
+validation.
+
+**Supported** (programmatic install):
+- **Local** — a local VCF Ops admin or service account (recommended)
+- **vCenter SSO** (`VC` / `VC_GROUP`) — vCenter SSO credentials, configured
+  as an auth source in VCF Ops
+- **Active Directory** — domain credentials in UPN form
+  (`user@corp.example.com`)
+- **LDAP** — per the VCF Operations Suite API documentation; bind-validatable
+  LDAP credentials should work, but this path is not yet covered by our
+  test matrix
+
+**Not supported** (use a Local service account instead):
+- **VCF Identity Broker** ("VCF SSO" / `VIDB`) — federated SSO; the Suite API
+  refuses programmatic password authentication for VIDB-typed sources. A
+  future VCF Operations release is expected to address this; check Broadcom
+  support documentation for updates.
+- **VMware Identity Manager / Workspace ONE Access** (`VIDM`) — federated SSO;
+  programmatic password authentication was empirically refused on the
+  Ops versions we tested. Treat as unsupported until verified against your
+  specific environment.
+
+If your VCF Operations instance is configured only with `VIDB` or `VIDM`
+auth sources, create a local service account for automation use.
+
+> The auth-source landscape evolves with each Ops release. Watch this
+> README and the framework's documentation for updates.
 
 ## Installation
 
