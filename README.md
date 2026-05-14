@@ -13,8 +13,9 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 ## Dashboards
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| capacity-assessment-dashboard | 2026-05-10 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
+| capacity-assessment-dashboard | 2026-05-14 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
 | demand-driven-capacity-v2 | 2026-05-07 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
+| quarterly-capacity-review-dashboard | 2026-05-14 | Executive quarterly capacity review. | [Download](dashboards/quarterly-capacity-review-dashboard.zip) | `python3 install.py` |
 | vks-core-consumption-dashboard | 2026-05-07 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
 
 ## Views
@@ -34,7 +35,7 @@ _No releases yet._
 ## Management Packs
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| unifi-network-integration-managementpack | 2026-05-10 | Monitors UniFi network devices via the Integration API v1. | [Download](management-packs/unifi-network-integration-managementpack.zip) | `python3 install.py` |
+| unifi-network-integration-managementpack | 2026-05-14 | Monitors UniFi network devices via the Integration API v1. | [Download](management-packs/unifi-network-integration-managementpack.zip) | `python3 install.py` |
 
 ## Third-Party Content
 _Content authored by the community and packaged here for convenience. License and authorship information is shown per item._
@@ -42,7 +43,7 @@ _Content authored by the community and packaged here for convenience. License an
 ### Dashboards
 | Name | Version | Released | Description | License | Authors | Download | Install |
 |---|---|---|---|---|---|---|---|
-| idps-planner-3.5 | 3.5 | 2026-05-10 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
+| idps-planner-3.5 | 3.5 | 2026-05-14 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
 
 ## Retired
 | Name | Subdir | Retired | Reason | Download |
