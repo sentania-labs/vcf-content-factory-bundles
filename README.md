@@ -7,16 +7,16 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 ## Bundles
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| storage-path-monitoring | 2026-05-10 | Monitors active storage path counts on ESXi hosts and alerts when hosts within a cluster have inconsistent path counts. | [Download](bundles/storage-path-monitoring.zip) | `python3 install.py` |
-| vks-core-consumption-bundle | 2026-05-07 | VKS Core Consumption suite for VCF Operations — ships the interactive dashboard and a matching scheduled-report companion together. | [Download](bundles/vks-core-consumption-bundle.zip) | `python3 install.py` |
+| storage-path-monitoring | 2026-05-07 | Monitors active storage path counts on ESXi hosts and alerts when hosts within a cluster have inconsistent path counts. | [Download](bundles/storage-path-monitoring.zip) | `python3 install.py` |
+| vks-core-consumption-bundle | 2026-04-27 | VKS Core Consumption suite for VCF Operations — ships the interactive dashboard and a matching scheduled-report companion together. | [Download](bundles/vks-core-consumption-bundle.zip) | `python3 install.py` |
 
 ## Dashboards
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| capacity-assessment-dashboard | 2026-05-19 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
-| demand-driven-capacity-v2 | 2026-05-07 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
-| quarterly-capacity-review-dashboard | 2026-05-19 | Executive quarterly capacity review. | [Download](dashboards/quarterly-capacity-review-dashboard.zip) | `python3 install.py` |
-| vks-core-consumption-dashboard | 2026-05-07 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
+| capacity-assessment-dashboard | 2026-04-27 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
+| demand-driven-capacity-v2 | 2026-04-27 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
+| quarterly-capacity-review-dashboard | 2026-05-14 | Executive quarterly capacity review. | [Download](dashboards/quarterly-capacity-review-dashboard.zip) | `python3 install.py` |
+| vks-core-consumption-dashboard | 2026-04-27 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
 
 ## Views
 _No releases yet._
@@ -30,13 +30,13 @@ _No releases yet._
 ## Reports
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| vks-core-consumption-report | 2026-05-07 | Printable/exportable summary of VKS vCPU consumption across a VCF environment. | [Download](reports/vks-core-consumption-report.zip) | `python3 install.py` |
+| vks-core-consumption-report | 2026-04-27 | Printable/exportable summary of VKS vCPU consumption across a VCF environment. | [Download](reports/vks-core-consumption-report.zip) | `python3 install.py` |
 
 ## Management Packs
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
 | synology-diskstation-managementpack | 2026-05-19 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download](management-packs/synology-diskstation-managementpack.zip) | `python3 install.py` |
-| unifi-network-integration-managementpack | 2026-05-19 | Monitors UniFi network devices via the Integration API v1. | [Download](management-packs/unifi-network-integration-managementpack.zip) | `python3 install.py` |
+| unifi-network-integration-managementpack | 2026-05-09 | Monitors UniFi network devices via the Integration API v1. | [Download](management-packs/unifi-network-integration-managementpack.zip) | `python3 install.py` |
 
 ## Third-Party Content
 _Content authored by the community and packaged here for convenience. License and authorship information is shown per item._
@@ -44,7 +44,7 @@ _Content authored by the community and packaged here for convenience. License an
 ### Dashboards
 | Name | Version | Released | Description | License | Authors | Download | Install |
 |---|---|---|---|---|---|---|---|
-| idps-planner-3.5 | 3.5 | 2026-05-19 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
+| idps-planner-3.5 | 3.5 | 2026-04-27 | vDefend IDPS resource-monitoring dashboard for VCF Operations. | MIT | Ryan Pletka, Brock Peterson, Joe Tietz, Geoff Shukin, Scott Bowe | [Download](ThirdPartyContent/dashboards/idps-planner-3.5.zip) | `python3 install.py` |
 
 ## Retired
 | Name | Subdir | Retired | Reason | Download |
