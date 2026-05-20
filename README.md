@@ -36,6 +36,7 @@ _No releases yet._
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
 | synology-diskstation-managementpack | 2026-05-19 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download](management-packs/synology-diskstation-managementpack.zip) | UI: Administration → Solutions |
+| unifi-controller-managementpack | 2026-05-19 | Monitors UniFi infrastructure via the classic Network API and Protect API. | [Download](management-packs/unifi-controller-managementpack.zip) | UI: Administration → Solutions |
 | unifi-network-integration-managementpack | 2026-05-09 | Monitors UniFi network devices via the Integration API v1. | [Download](management-packs/unifi-network-integration-managementpack.zip) | UI: Administration → Solutions |
 
 ## Third-Party Content
@@ -49,6 +50,7 @@ _Content authored by the community and packaged here for convenience. License an
 ## Retired
 | Name | Subdir | Retired | Reason | Download |
 |---|---|---|---|---|
+| unifi-network-integration-managementpack.zip | management-packs | 2026-05-20 | deprecated by 'unifi-controller-managementpack' | [Download](retired/management-packs/unifi-network-integration-managementpack.zip) |
 | idps-planner.zip | ThirdPartyContent/dashboards | 2026-04-28 | stale: no source release manifest | [Download](retired/ThirdPartyContent/dashboards/idps-planner.zip) |
 <!-- AUTO:END -->
 
