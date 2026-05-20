@@ -35,8 +35,8 @@ _No releases yet._
 ## Management Packs
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
-| synology-diskstation-managementpack | 2026-05-19 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download](management-packs/synology-diskstation-managementpack.zip) | `python3 install.py` |
-| unifi-network-integration-managementpack | 2026-05-09 | Monitors UniFi network devices via the Integration API v1. | [Download](management-packs/unifi-network-integration-managementpack.zip) | `python3 install.py` |
+| synology-diskstation-managementpack | 2026-05-19 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download](management-packs/synology-diskstation-managementpack.zip) | UI: Administration → Solutions |
+| unifi-network-integration-managementpack | 2026-05-09 | Monitors UniFi network devices via the Integration API v1. | [Download](management-packs/unifi-network-integration-managementpack.zip) | UI: Administration → Solutions |
 
 ## Third-Party Content
 _Content authored by the community and packaged here for convenience. License and authorship information is shown per item._
