@@ -33,10 +33,14 @@ _No releases yet._
 | vks-core-consumption-report | 2026-04-27 | Printable/exportable summary of VKS vCPU consumption across a VCF environment. | [Download](reports/vks-core-consumption-report.zip) | `python3 install.py` |
 
 ## Management Packs
-| Name | Released | Description | Download | Install |
-|---|---|---|---|---|
-| synology-diskstation-managementpack | 2026-05-19 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download](management-packs/synology-diskstation-managementpack.zip) | UI: Administration → Solutions |
-| unifi-controller-managementpack | 2026-05-19 | Monitors UniFi infrastructure via the classic Network API and Protect API. | [Download](management-packs/unifi-controller-managementpack.zip) | UI: Administration → Solutions |
+_No releases yet._
+
+### SDK Adapter Management Packs
+_These management packs are built and released independently by their own CI pipeline. The pak binary lives on the pak's own GitHub repo — click the pak name or 'Download latest' to get the current release. No version is pinned here; the link always resolves to the latest published release._
+| Name | Released | Description | Download |
+|---|---|---|---|
+| [synology-diskstation-managementpack](https://github.com/sentania-labs/vcf-content-factory-sdk-synology) | 2026-05-19 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download latest](https://github.com/sentania-labs/vcf-content-factory-sdk-synology/releases/latest) |
+| [unifi-controller-managementpack](https://github.com/sentania-labs/vcf-content-factory-sdk-unifi) | 2026-05-19 | Monitors UniFi infrastructure via the classic Network API and Protect API. | [Download latest](https://github.com/sentania-labs/vcf-content-factory-sdk-unifi/releases/latest) |
 
 ## Third-Party Content
 _Content authored by the community and packaged here for convenience. License and authorship information is shown per item._
@@ -49,6 +53,8 @@ _Content authored by the community and packaged here for convenience. License an
 ## Retired
 | Name | Subdir | Retired | Reason | Download |
 |---|---|---|---|---|
+| synology-diskstation-managementpack.zip | management-packs | 2026-06-10 | stale: no source release manifest | [Download](retired/management-packs/synology-diskstation-managementpack.zip) |
+| unifi-controller-managementpack.zip | management-packs | 2026-06-10 | stale: no source release manifest | [Download](retired/management-packs/unifi-controller-managementpack.zip) |
 | unifi-network-integration-managementpack.zip | management-packs | 2026-05-20 | stale: no source release manifest | [Download](retired/management-packs/unifi-network-integration-managementpack.zip) |
 | idps-planner.zip | ThirdPartyContent/dashboards | 2026-04-28 | stale: no source release manifest | [Download](retired/ThirdPartyContent/dashboards/idps-planner.zip) |
 <!-- AUTO:END -->
