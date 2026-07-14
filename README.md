@@ -41,6 +41,7 @@ _These management packs are built and released independently by their own CI pip
 |---|---|---|---|
 | [synology-diskstation-managementpack](https://github.com/sentania-labs/vcf-content-factory-sdk-synology) | 2026-07-06 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download latest](https://github.com/sentania-labs/vcf-content-factory-sdk-synology/releases/latest) |
 | [unifi-controller-managementpack](https://github.com/sentania-labs/vcf-content-factory-sdk-unifi) | 2026-07-06 | Monitors UniFi infrastructure via the classic Network API and Protect API. | [Download latest](https://github.com/sentania-labs/vcf-content-factory-sdk-unifi/releases/latest) |
+| [vcommunity-vsphere-managementpack](https://github.com/sentania-labs/vcf-content-factory-sdk-vcommunity-vsphere) | 2026-07-13 | Tier 2 SDK port of the VCF Operations vCommunity pack's vSphere/vCenter surface. | [Download latest](https://github.com/sentania-labs/vcf-content-factory-sdk-vcommunity-vsphere/releases/latest) |
 
 ## Third-Party Content
 _Content authored by the community and packaged here for convenience. License and authorship information is shown per item._
