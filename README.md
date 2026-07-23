@@ -14,6 +14,7 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
 | capacity-assessment-dashboard | 2026-04-27 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
+| cpu-support-status-dashboard | 2026-07-22 | CPU support/deprecation posture per Broadcom KB 318697 (https://knowledge.broadcom.com/external/article/318697/cpu-support-deprecation-and-discontinuat.html) — source of record for the underlying coded classification. | [Download](dashboards/cpu-support-status-dashboard.zip) | `python3 install.py` |
 | demand-driven-capacity-v2 | 2026-04-27 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
 | quarterly-capacity-review-dashboard | 2026-05-14 | Executive quarterly capacity review. | [Download](dashboards/quarterly-capacity-review-dashboard.zip) | `python3 install.py` |
 | vks-core-consumption-dashboard | 2026-04-27 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
