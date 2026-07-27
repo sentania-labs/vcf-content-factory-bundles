@@ -18,6 +18,7 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 | demand-driven-capacity-v2 | 2026-04-27 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
 | quarterly-capacity-review-dashboard | 2026-05-14 | Executive quarterly capacity review. | [Download](dashboards/quarterly-capacity-review-dashboard.zip) | `python3 install.py` |
 | vks-core-consumption-dashboard | 2026-04-27 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
+| vm-snapshot-inventory-dashboard | 2026-07-27 | Fleet-wide VM snapshot inventory. | [Download](dashboards/vm-snapshot-inventory-dashboard.zip) | `python3 install.py` |
 
 ## Views
 _No releases yet._
