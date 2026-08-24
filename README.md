@@ -8,13 +8,13 @@ Pre-built content bundles for **VMware Cloud Foundation (VCF) Operations** (form
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
 | storage-path-monitoring | 2026-05-07 | Monitors active storage path counts on ESXi hosts and alerts when hosts within a cluster have inconsistent path counts. | [Download](bundles/storage-path-monitoring.zip) | `python3 install.py` |
-| vks-core-consumption-bundle | 2026-04-27 | VKS Core Consumption suite for VCF Operations — ships the interactive dashboard and a matching scheduled-report companion together. | [Download](bundles/vks-core-consumption-bundle.zip) | `python3 install.py` |
+| vks-core-consumption-bundle | 2026-04-27 | VKS Core Consumption suite for VCF Operations, ships the interactive dashboard and a matching scheduled-report companion together. | [Download](bundles/vks-core-consumption-bundle.zip) | `python3 install.py` |
 
 ## Dashboards
 | Name | Released | Description | Download | Install |
 |---|---|---|---|---|
 | capacity-assessment-dashboard | 2026-04-27 | Single-dashboard capacity review for a VCF Ops admin. | [Download](dashboards/capacity-assessment-dashboard.zip) | `python3 install.py` |
-| cpu-support-status-dashboard | 2026-07-23 | CPU support/deprecation posture per Broadcom KB 318697 (https://knowledge.broadcom.com/external/article/318697/cpu-support-deprecation-and-discontinuat.html) — source of record for the underlying coded classification. | [Download](dashboards/cpu-support-status-dashboard.zip) | `python3 install.py` |
+| cpu-support-status-dashboard | 2026-07-23 | CPU support/deprecation posture per Broadcom KB 318697 (https://knowledge.broadcom.com/external/article/318697/cpu-support-deprecation-and-discontinuat.html), source of record for the underlying coded classification. | [Download](dashboards/cpu-support-status-dashboard.zip) | `python3 install.py` |
 | demand-driven-capacity-v2 | 2026-04-27 | Demand-driven capacity planning v2. | [Download](dashboards/demand-driven-capacity-v2.zip) | `python3 install.py` |
 | quarterly-capacity-review-dashboard | 2026-05-14 | Executive quarterly capacity review. | [Download](dashboards/quarterly-capacity-review-dashboard.zip) | `python3 install.py` |
 | vks-core-consumption-dashboard | 2026-04-27 | Per-vCenter breakdown of VM vCPU by role: VKS guest nodes, Supervisor CP, vCLS, VM Service, Regular VMs, and vSphere Pods. | [Download](dashboards/vks-core-consumption-dashboard.zip) | `python3 install.py` |
@@ -38,7 +38,7 @@ _No releases yet._
 _No releases yet._
 
 ### SDK Adapter Management Packs
-_These management packs are built and released independently by their own CI pipeline. The pak binary lives on the pak's own GitHub repo — click the pak name or 'Download latest' to get the current release. No version is pinned here; the link always resolves to the latest published release._
+_These management packs are built and released independently by their own CI pipeline. The pak binary lives on the pak's own GitHub repo, click the pak name or 'Download latest' to get the current release. No version is pinned here; the link always resolves to the latest published release._
 | Name | Released | Description | Download |
 |---|---|---|---|
 | [synology-diskstation-managementpack](https://github.com/sentania-labs/vcf-content-factory-sdk-synology) | 2026-07-06 | Monitors Synology DiskStation NAS devices via the DSM Web API (Tier 2 SDK). | [Download latest](https://github.com/sentania-labs/vcf-content-factory-sdk-synology/releases/latest) |
